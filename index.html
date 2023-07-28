@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neymount</title>
+  <link rel = "icon" href ="/images/img_logo.png"
+        type = "image/x-icon">
+  <link rel="stylesheet" href="styles/indexC.css">
+</head>
+<body>
+<header class="menu">
+  <div class="logo"><li id="logo"><a href="index.html"><img  src="/images/logo.png" alt=""></a></li></div>
+  <div class="searchbox"><label for="search"><img onclick="timkiem()" id="searchlogo" src="/images/search.png" alt=""></label>
+    <input id="search" type="search" placeholder="Tìm kiếm">
+  </div>
+  <ul>
+    <li><a href="index.html">Trang chủ</a></li>
+    <li><a href="">Thông báo</a>
+      <ul>
+        <li><a href="">
+          <div class="headerpost">
+            <img class="avttb" src="messi.jpg" alt="" style="width: 40px;height: 40px">
+            <div class="nametp">
+              <span><b>Lionel Messi Đã nhắc đến bạn trong bình luận của anh ấy</b></span><br>
+              <span class="ndcmttb">2 ngày trước</span>
+            </div>
+          </div></a></li>
+        <li><a href=""><div class="headerpost">
+          <img class="avttb" src="cr7_siiii.jpg" alt="" style="width: 40px;height: 40px">
+          <div class="nametp">
+            <span><b>Critiano Ronaldo Đã đăng bài trong Hội AntiFan Anh Messi</b></span><br>
+            <span class="ndcmttb">1 ngày trước </span>
+          </div>
+        </div></a></li>
+        <li><a href=""> <div class="headerpost">
+          <img class="avttb" src="mp3.jpg" alt="" style="width: 40px;height: 40px">
+          <div class="nametp">
+            <span><b>kylian Mbappe Đã gắn thẻ bạn trong một <br> bài viết</b></span><br>
+            <span class="ndcmttb">15 phút trước</span>
+          </div>
+        </div></a></li>
+      </ul>
+    </li>
+    <li><a href="">Tin nhắn</a>
+      <ul>
+        <li><a href="">
+          <div class="headerpost">
+            <img class="avttb" src="messi.jpg" alt="" style="width: 40px;height: 40px">
+            <div class="nametp">
+              <span><b>Lionel Messi</b></span><br>
+              <span class="ndcmttb">Đã gửi cho bạn một ảnh. Th6</span>
+            </div>
+          </div></a></li>
+        <li><a href=""><div class="headerpost">
+          <img class="avttb" src="cr7_siiii.jpg" alt="" style="width: 40px;height: 40px">
+          <div class="nametp">
+            <span><b>Critiano Ronaldo</b></span><br>
+            <span class="ndcmttb">Sunday, The King plays. 32 phút trước</span>
+          </div>
+        </div></a></li>
+        <li><a href=""> <div class="headerpost">
+          <img class="avttb" src="mp3.jpg" alt="" style="width: 40px;height: 40px">
+          <div class="nametp">
+            <span><b>Kylian Mbappe</b></span><br>
+            <span class="ndcmttb">Hala Madrid. Th5</span>
+          </div>
+        </div></a></li>
+      </ul>
+    </li>
+    <li><a href="profile.html"><img src="avt.jpg" alt="Avatar" title="Trang cá nhân"></a>
+      <ul>
+        <li><a href="profile.html">Trang cá nhân</a></li>
+        <li><a href="">Setting</a></li>
+        <li><a href="">Đóng góp ý kiến</a></li>
+        <li><a id="dangxuat" href="sigin.html">Đăng xuất</a></li>
+  </ul>
+    </li>
+  </ul>
+</header>
+<main class="body">
+  <h2 class="titleheader">Home</h2>
+<div class="box">
+  <div class="news1">
+    <a href="profile.html"><img src="avt.jpg" alt="Avatar" title="Trang cá nhân"></a>
+    <div class="news">Bạn đang nghĩ gì?</div>
+  </div>
+  <div class="create">
+    <div class="video1">
+      <div class="video tao"><img src="/images/video-player.png" alt="video">
+        <span class="text-vd">Video</span>
+      </div>
+      <input  accept="video/mp4,video/quicktime" type="file" class="inputt" placeholder="video" title="Video">
+    </div>
+    <div class="video1">
+      <div class="picture tao">
+        <img src="/images/picture.png" alt="">
+        <span class="text-vd">Ảnh</span>
+      </div>
+      <input id="file-uploader" accept="image/jpeg,image/png,image/webp,image/gif" type="file" class="inputt" placeholder="picture" title="Picture">
+    </div>
+    <div class="video1">
+      <div class="reaction tao">
+        <img src="/images/reaction.png" alt="" title="reaction">
+        <span class="text-vd">Reaction</span>
+        <ul>
+          <li><button class="reactp" id="tucgian" onclick="hienthireact()" type="submit" value="Tức giận">Tức Giận</button></li>
+          <li><button class="reactp" id="vuive" onclick="hienthireact1()" type="submit" value="Vui vẻ">Vui Vẻ</button></li>
+          <li><button class="reactp" id="hp" onclick="hienthireact2()" type="submit" value="Hạnh phúc">Hạnh Phúc</button></li>
+          <li><button class="reactp" id="buonba" onclick="hienthireact3()" type="submit" value="Buồn bã">Buồn</button></li>
+        </ul>
+      </div>
+    </div>
+</div>
+  <div id="image-grid"></div>
+  <div class="hainut">
+    <div id="dangtai"></div>
+    <div id="cancle"></div>
+  </div>
+</div>
+  <div class="body-main">
+<!--    Post 1-->
+    <div id="postclone">
+
+    </div>
+    <div class="postreaction"></div>
+    <div class="post1">
+      <div class="headerpost">
+        <img class="avtp" src="avtpost1.jpg" alt="">
+        <div class="namet">
+          <span><b>Chủ tịch Neymar JR</b></span>
+          <span class="time">Đã đăng vào 16:41</span>
+        </div>
+      </div>
+      <div class="bodypost">
+        <img src="/images/post1.jpg" style="width: 760px" alt="">
+      </div>
+      <div class="react">
+      <div class="tym">
+        <img src="/images/i-love-you.png" alt="" style="width: 25px" title="Thả tym">
+        <span>630.000.000</span>
+      </div>
+        <div class="tym">
+          <img src="/images/lol.png" alt="" style="width: 25px" title="Hahahaa">
+          <span>6.282.141</span>
+        </div>
+        <div class="tym">
+          <img src="/images/sad.png" alt="" style="width: 25px" title="Saddd">
+          <span>634.242</span>
+        </div>
+        <div class="tym">
+          <img src="/images/angry.png" alt="" style="width: 25px" title="Gruuuuzz">
+          <span>634.242.941</span>
+        </div>
+      </div>
+      <div class="cmt">
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="messi.jpg" alt="">
+          <div class="namep namet">
+            <span><b>Lionel Messi</b></span>
+            <span class="ndcmt1">Vamosss</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="cr7_siiii.jpg" alt="">
+          <div class="namep namet">
+            <span class="name"><b>Cristiano Ronaldo</b></span>
+            <span class="ndcmt1">Siuuuuuu</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="mp3.jpg" alt="">
+          <div class="namep namet">
+            <span><b>Kylian Mbappe</b></span>
+            <span class="ndcmt1">Good</span>
+          </div>
+        </div>
+      </div>
+      <div class="cmtthuc">
+
+      </div>
+      <div class="cmtclone">
+        <div class="avtcmt"><img class="avtp" src="avt.jpg"><textarea class="ndcmt"></textarea></div>
+        <div class="buttoncmt"><button id="post" class="Post" type="button">Post comment</button><button id="cancle" class="Cancle" type="button">Cancel</button></div>
+      </div>
+    </div>
+    <!--  Post 2-->
+    <div class="post2 post1">
+      <div class="headerpost">
+        <img class="avtp" src="cr7_siiii.jpg" alt="">
+        <div class="namet">
+          <span><b>Cristiano  Ronaldo</b></span>
+          <span class="time">Đã đăng vào 9:41</span>
+        </div>
+      </div>
+      <div class="bodypost">
+        <img src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/blt1a659ed4314e1eee/60dc21eb2e95e10f21f301c8/9a729ab8ce7a9b9c74ccec3c051818565777b7b1.png" style="width: 760px" alt="">
+      </div>
+      <div class="react">
+        <div class="tym">
+          <img src="/images/i-love-you.png" alt="" style="width: 25px" title="Thả tym">
+          <span>1.232.876.129</span>
+        </div>
+        <div class="tym">
+          <img src="/images/lol.png" alt="" style="width: 25px" title="Hahahaa">
+          <span>36.992.091</span>
+        </div>
+        <div class="tym">
+          <img src="/images/sad.png" alt="" style="width: 25px" title="Saddd">
+          <span>3.131.322</span>
+        </div>
+        <div class="tym">
+          <img src="/images/angry.png" alt="" style="width: 25px" title="Gruuuuzz">
+          <span>131.132</span>
+        </div>
+      </div>
+      <div class="cmt">
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="data:image/jpeg;base64,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" alt="">
+          <div class="namep namet">
+            <span class="name"><b>Anh trưởng</b></span>
+            <span class="ndcmt1">Đẳng cấp</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202212/bruno_fernandes_reuters-one_one.jpg?VersionId=A905pnOlI4rwLa8oe_EJfSx2IP5M0KFT" alt="">
+          <div class="namep namet">
+            <span><b>Bủ Nô</b></span>
+            <span class="ndcmt1">G.O.A.T</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="data:image/jpeg;base64,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" alt="">
+          <div class="namep namet">
+            <span><b>Đại Đế</b></span>
+            <span class="ndcmt1">Last Dance</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="messi.jpg" alt="">
+          <div class="namep namet">
+            <span><b>Lionel Messi</b></span>
+            <span class="ndcmt1">Vamosss</span>
+          </div>
+        </div>
+      </div>
+      <div class="cmtthuc2 cmtthuc">
+
+      </div>
+      <div class="cmtclone">
+        <div class="avtcmt"><img class="avtp" src="avt.jpg"><textarea class="ndcmt2 ndcmt"></textarea></div>
+        <div class="buttoncmt"><button id="post2" class="Post" type="button">Post comment</button><button class="Cancle" type="button">Cancel</button></div>
+      </div>
+    </div>
+<!--    Post 3-->
+    <div class="post3 post1">
+      <div class="headerpost">
+        <img class="avtp" src="messi.jpg" alt="">
+        <div class="namet">
+          <span><b>Lionel Messi</b></span>
+          <span class="time">Đã đăng vào 12:00</span>
+        </div>
+      </div>
+      <div class="bodypost">
+        <img src="https://cdn-img.thethao247.vn//storage/files/vietbq/2022/12/19/7xmxyz913223-1671401515.jpg" style="width: 760px" alt="">
+      </div>
+      <div class="react">
+        <div class="tym">
+          <img src="/images/i-love-you.png" alt="" style="width: 25px" title="Thả tym">
+          <span>1.232.876.129</span>
+        </div>
+        <div class="tym">
+          <img src="/images/lol.png" alt="" style="width: 25px" title="Hahahaa">
+          <span>36.992.091</span>
+        </div>
+        <div class="tym">
+          <img src="/images/sad.png" alt="" style="width: 25px" title="Saddd">
+          <span>3.131.322</span>
+        </div>
+        <div class="tym">
+          <img src="/images/angry.png" alt="" style="width: 25px" title="Gruuuuzz">
+          <span>131.132</span>
+        </div>
+      </div>
+      <div class="cmt">
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="avtpost1.jpg" alt="">
+          <div class="namep namet">
+            <span id="name"><b>Neymar Jr</b></span>
+            <span class="ndcmt1">G.O.A.T</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="mp3.jpg" alt="">
+          <div class="namep namet">
+            <span><b>Kylian Mbappe</b></span>
+            <span class="ndcmt1">G.O.A.T +1</span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoWA6L14uHKcbAIYPrkGs3wJmRnGjRxFi5XK7mlPr62fS3BJ6bJg-VM1OkXyZW778Vt4w&usqp=CAU" alt="">
+          <div class="namep namet">
+            <span><b>Thiên  thần Dimaria</b></span>
+            <span class="ndcmt1"><img src="https://cdn-icons-png.flaticon.com/512/616/616714.png" alt="" style="width: 15px">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616714.png" alt="" style="width: 15px">
+            <img src="https://cdn-icons-png.flaticon.com/512/616/616714.png" alt="" style="width: 15px"></span>
+          </div>
+        </div>
+        <div class="headerpost cmtpost">
+          <img class="avtp" src="CR7_siiii.jpg" alt="">
+          <div class="namep namet">
+            <span><b>Cristiano Ronaldo</b></span>
+            <span class="ndcmt1">Vamosss</span>
+          </div>
+        </div>
+      </div>
+      <div class="cmtthuc3 cmtthuc">
+
+      </div>
+      <div class="cmtclone">
+        <div class="avtcmt"><img class="avtp" src="avt.jpg"><textarea class="ndcmt3 ndcmt"></textarea></div>
+        <div class="buttoncmt"><button id="post3" class="Post" type="button">Post comment</button><button class="Cancle" type="button">Cancel</button></div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div >Nhóm 18 Công Nghệ WEB</div>
+  <div>Copyright @2022 Neymount</div>
+</footer>
+      <script src="scripts/indexJ.js">
+</script>
+</body>
+</html>
